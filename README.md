@@ -13,15 +13,15 @@ Managing employee records is a core HR operation. This project demonstrates how 
 
 # Tech Stack
 
->    Language: Java 25
->    Framework: Spring Boot 4.1.1
->    Web Layer: Spring Web (REST API)
->    Data Layer: Spring Data JPA (Hibernate)
->    Database: MySQL 8.0
->    Build Tool: Maven
->    Lombok: Boilerplate reduction
->    MapStruct / Custom Mapper | DTO mapping
->    Jakarta Validation | Request validation
+  ~ Language: Java 25
+  ~ Framework: Spring Boot 4.1.1
+  ~ Web Layer: Spring Web (REST API)
+  ~ Data Layer: Spring Data JPA (Hibernate)
+  ~ Database: MySQL 8.0
+  ~ Build Tool: Maven
+  ~ Lombok: Boilerplate reduction
+  ~ MapStruct / Custom Mapper | DTO mapping
+  ~ Jakarta Validation | Request validation
 
 ---
 
