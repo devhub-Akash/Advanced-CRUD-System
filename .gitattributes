@@ -1,2 +1,6 @@
 /mvnw text eol=lf
 *.cmd text eol=crlf
+
+# Make sure Java files are counted
+*.java linguist-language=Java
+*.java linguist-detectable=true
