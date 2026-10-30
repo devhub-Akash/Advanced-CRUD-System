@@ -30,7 +30,7 @@ Managing employee records is a core HR operation. This project demonstrates how 
 - ✅ Structured logging
 - ✅ Dev / Prod profiles
 - ✅ Swagger UI documentation
-- 
+  
 
 
 
