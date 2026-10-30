@@ -1,7 +1,7 @@
-# Employee Management System
+# Employee Management API
 
-A production-ready RESTful Employee Management System built with "Java", "Spring Boot", and "MySQL".  
-It provides complete CRUD operations for employee records, advanced filtering, pagination, request/response DTOs, a mapper layer, Bean Validation, and global exception handling — all following clean architecture and best practices.
+A production-ready RESTful Employee Management System built with "Java", "Spring Boot", and "MySQL".
+It provides complete CRUD operations for employee records, with pagination, sorting, dynamic filtering, and comprehensive exception handling — all following clean architecture and best practices.
 
 ---
 
@@ -11,41 +11,26 @@ Managing employee records is a core HR operation. This project demonstrates how 
 
 ---
 
-# Tech Stack
-
-  ~ Language: Java 25
+## Tech Stack
+- Java 25 / Spring Boot 4.1.2
+- Spring Data JPA + Hibernate
+- MySQL (production profile)
+- SpringDoc OpenAPI (Swagger UI)
+- Maven
   
-  ~ Framework: Spring Boot 4.1.1
-  
-  ~ Web Layer: Spring Web (REST API)
-  
-  ~ Data Layer: Spring Data JPA (Hibernate)
-  
-  ~ Database: MySQL 8.0
-  
-  ~ Build Tool: Maven
-  
-  ~ Lombok: Boilerplate reduction
-  
-  ~ MapStruct / Custom Mapper | DTO mapping
-  
-  ~ Jakarta Validation | Request validation
-  
-
 ---
 
 ## Features
-
-- ✅ Complete CRUD for employee records
-- 🔍 Dynamic filtering by name, department, salary range, and hire date
-- 📦 Request and Response DTOs
-- 🔁 Mapper layer for entity-to-DTO conversion
-- 🛡️ Bean Validation on request payloads
-- 🚨 Global exception handling with consistent error responses
-- 🗄️ Spring Data JPA with MySQL
-- 🧱 Clean layered architecture
-
-
+- ✅ Full CRUD operations
+- ✅ Pagination (page-based)
+- ✅ Sorting (multi-field, direction-aware)
+- 🔍 Dynamic filtering (JPA Specifications)
+- ✅ Soft delete + Permanent delete
+- 🚨 Global exception handling (consistent JSON)
+- ✅ Structured logging
+- ✅ Dev / Prod profiles
+- ✅ Swagger UI documentation
+- 
 
 
 
