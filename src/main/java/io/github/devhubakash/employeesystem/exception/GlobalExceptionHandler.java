@@ -65,6 +65,7 @@ public class GlobalExceptionHandler {
                 .body(validationExceptionResponseDTO);
     }
 
+
     @ExceptionHandler(ResourceNotFoundException.class)
     public ResponseEntity<ExceptionResponseDTO> handleResourceNotFound(ResourceNotFoundException ex, HttpServletRequest request) {
         log.warn("Resource not found at {}: {}", request.getRequestURI(), ex.getMessage());
@@ -160,6 +161,7 @@ public class GlobalExceptionHandler {
                 .body(exceptionResponseDTO);
     }
 
+
     @ExceptionHandler(HttpMessageNotReadableException.class)
     public ResponseEntity<ExceptionResponseDTO> handleHttpMessageNotReadable(HttpMessageNotReadableException ex, HttpServletRequest request) {
         log.warn("Malformed JSON at {}: {}",  request.getRequestURI(), ex.getMessage());
@@ -176,24 +178,6 @@ public class GlobalExceptionHandler {
                 .status(HttpStatus.BAD_REQUEST)
                 .body(exceptionResponseDTO);
     }
-
-
-//    @ExceptionHandler({BadCredentialsException.class, UsernameNotFoundException.class})
-//    public ResponseEntity<ExceptionResponseDTO> handleBadCredentials(Exception ex, HttpServletRequest request) {
-//        log.warn("Authentication failed at {}: {}", request.getRequestURI(), ex.getMessage());
-//
-//        ExceptionResponseDTO exceptionResponseDTO = new ExceptionResponseDTO(
-//              LocalDateTime.now(),
-//              HttpStatus.UNAUTHORIZED.value(),
-//              HttpStatus.UNAUTHORIZED.getReasonPhrase(),
-//              "Invalid EmpId and password",
-//              request.getRequestURI()
-//        );
-//
-//        return ResponseEntity
-//                .status(HttpStatus.UNAUTHORIZED)
-//                .body(exceptionResponseDTO);
-//    }
 
 
     @ExceptionHandler(AccessDeniedException.class)
