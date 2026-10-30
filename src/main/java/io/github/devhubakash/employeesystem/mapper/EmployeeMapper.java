@@ -36,4 +36,15 @@ public class EmployeeMapper {
         employee.setDeptName(employeeRequestDTO.getDeptName());
         employee.setSalary(employeeRequestDTO.getSalary());
     }
+
+//    public Employee toEntity(SignupRequestDTO signupRequestDTO ){
+//        Employee emp = new Employee();
+//        emp.setEmpId(signupRequestDTO.getEmpId());
+//        emp.setEmpName(signupRequestDTO.getEmpName());
+//        emp.setDeptName(signupRequestDTO.getDeptName());
+//        emp.setSalary(signupRequestDTO.getSalary());
+//        emp.setRole("ROLE_EMPLOYEE");
+//        emp.setDeleted(false);
+//        return emp;
+//    }
 }

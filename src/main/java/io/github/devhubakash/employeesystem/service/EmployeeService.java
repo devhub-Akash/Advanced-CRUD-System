@@ -1,9 +1,12 @@
 package io.github.devhubakash.employeesystem.service;
 
+import io.github.devhubakash.employeesystem.dto.EmployeeFilterDTO;
 import io.github.devhubakash.employeesystem.dto.EmployeeRequestDTO;
 import io.github.devhubakash.employeesystem.dto.EmployeeResponseDTO;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
-import java.util.List;
+import java.math.BigDecimal;
 
 public interface EmployeeService {
 
@@ -11,7 +14,7 @@ public interface EmployeeService {
 
     EmployeeResponseDTO getEmployeeById(String empId);
 
-    List<EmployeeResponseDTO> getAllEmployees();
+    Page<EmployeeResponseDTO> getAllEmployees(Pageable pageable);
 
     EmployeeResponseDTO updateEmployee(String empId, EmployeeRequestDTO employeeRequestDTO);
 
@@ -19,4 +22,5 @@ public interface EmployeeService {
 
     void permanentDeleteEmployee(String empId);
 
+    Page<EmployeeResponseDTO> searchEmployees(EmployeeFilterDTO filter, Pageable pageable);
 }
